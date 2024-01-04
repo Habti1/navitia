@@ -10,8 +10,6 @@ jobs:
 
   checks:
     runs-on: ubuntu-latest
-    container:
-      image: habti1/debian11_dev:latest
     steps:
     - uses: actions/checkout@v3
     - name: checkout submodules
