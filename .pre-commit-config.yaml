@@ -18,14 +18,6 @@ repos:
     -   id: check-merge-conflict
     -   id: check-yaml
         args: [--allow-multiple-documents]
--   repo: git@github.com:hove-io/navitia-pre-commit.git # fetch repo through ssh as it is private
-    rev: master
-    hooks:
-    -   id: clang-format
-        verbose: true
-        exclude: ^source/third_party/
-        files: \.(c|cc|cxx|cpp|h|hpp|hxx)$
-        args: [-i]
 -   repo: https://github.com/pre-commit/mirrors-mypy
     rev: v0.800
     hooks:
