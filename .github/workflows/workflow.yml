@@ -19,3 +19,15 @@ jobs:
         git submodule update --init --recursive
     - name: check submodules
       run: ./source/scripts/check_submodules.sh
+  precommit:
+    runs-on: ubuntu-latest
+    needs: [checks]
+    container:
+      image: habti1/debian11_dev:latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - name: install dependencies
+        run: |
+          pip3 install -r requirements_pre-commit.txt --upgrade
