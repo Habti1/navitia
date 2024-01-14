@@ -25,6 +25,9 @@ jobs:
     container:
       image: habti1/debian11_dev:latest
     steps:
+      - name: force chown to avoid errors
+        run: chown -R $USER:$USER .
+
       - uses: actions/checkout@v4
         with:
           submodules: recursive
