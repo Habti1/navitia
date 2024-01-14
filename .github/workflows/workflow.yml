@@ -29,4 +29,4 @@ jobs:
           submodules: recursive
       - name: install dependencies
         run: |
-          pip3 install -r requirements_pre-commit.txt --upgrade
+          pip3 install -r requirements_pre-commit.txt --upgrade --user
