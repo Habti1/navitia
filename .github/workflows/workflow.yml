@@ -25,8 +25,12 @@ jobs:
       image: habti1/debian11_dev:latest
     steps:
       - uses: actions/checkout@v1
-        with:
-          submodules: recursive
+
+      - name: get submodule
+        run: |
+          sed -i 's,git\@github.com:\([^/]*\)/\(.*\).git,https://github.com/\1/\2,' .gitmodules
+          git submodule update --init --recursive
+
       - name: install dependencies
         run: |
           pip3 install -r requirements_pre-commit.txt --upgrade
