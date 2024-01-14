@@ -1,21 +1,21 @@
 [submodule "source/utils"]
 	path = source/utils
-	url = git@github.com:Habti1/utils.git
+	url = https://github.com/Habti1/utils
 [submodule "source/third_party/osmpbfreader"]
 	path = source/third_party/osmpbfreader
-	url = git@github.com:Habti1/libosmpbfreader.git
+	url = https://github.com/Habti1/libosmpbfreader
 [submodule "source/third_party/SimpleAmqpClient"]
 	path = source/third_party/SimpleAmqpClient
-	url = git@github.com:Habti1/SimpleAmqpClient.git
+	url = https://github.com/Habti1/SimpleAmqpClient
 [submodule "source/third_party/librabbitmq-c"]
 	path = source/third_party/librabbitmq-c
 	url = https://github.com/alanxz/rabbitmq-c
 [submodule "source/chaos-proto"]
 	path = source/chaos-proto
-	url = git@github.com:Habti1/chaos-proto.git
+	url = https://github.com/Habti1/chaos-proto
 [submodule "source/navitia-proto"]
 	path = source/navitia-proto
-	url = git@github.com:Habti1/navitia-proto.git
+	url = https://github.com/Habti1/navitia-proto
 [submodule "source/third_party/prometheus-cpp"]
 	path = source/third_party/prometheus-cpp
 	url = https://github.com/jupp0r/prometheus-cpp
